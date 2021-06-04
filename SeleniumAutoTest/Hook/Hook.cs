@@ -15,7 +15,7 @@ using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 
 //Same parallel
-[assembly: Parallelizable(ParallelScope.Fixtures)]
+//[assembly: Parallelizable(ParallelScope.Fixtures)]
 
 namespace SeleniumAutoTest.Hook
 {
