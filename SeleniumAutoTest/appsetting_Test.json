@@ -1,0 +1,9 @@
+﻿{
+  "testcmdSetting": {
+    "RunUsingCategoryCmd": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoTest>dotnet test --filter TestCategory=FirstSetTestLogin",
+    "GetListOfTestCmd": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoTest>dotnet test  --list-tests",
+    "RunTestAllAtATime": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoTest>dotnet test",
+    "RunWithFilter": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoTest>dotnet test --filter TestCategory=FeatureTest",
+    "RunUsingTwoFilter": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoTest>dotnet test --filter TestCategory=FeatureTest |TestCategory=FirstSetTestLogin"
+  }
+}
