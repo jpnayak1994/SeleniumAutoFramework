@@ -58,7 +58,7 @@ namespace SeleniumAutoFramework.Base
                     ChromeOptions option = new ChromeOptions();
                     option.AddArgument("start-maximized");
                     option.AddArgument("--disable-gpu");
-                    //////option.AddArgument("--headless");
+                    option.AddArgument("--headless");
                     new DriverManager().SetUpDriver(new ChromeConfig());
                     _parallelConfig.Driver = new ChromeDriver(option);
                     browser = new Browser(_parallelConfig.Driver);
@@ -73,7 +73,7 @@ namespace SeleniumAutoFramework.Base
                     FirefoxOptions options1 = new FirefoxOptions();
                     options1.AddArgument("start-maximized");
                     options1.AddArgument("--disable-gpu");
-                    //////option.AddArgument("--headless");
+                    /////option.AddArgument("--headless");
                     new DriverManager().SetUpDriver(new FirefoxConfig());
                     _parallelConfig.Driver = new FirefoxDriver(options1);
                     browser = new Browser(_parallelConfig.Driver);
@@ -82,7 +82,7 @@ namespace SeleniumAutoFramework.Base
                     ChromeOptions option2 = new ChromeOptions();
                     option2.AddArgument("start-maximized");
                     option2.AddArgument("--disable-gpu");
-                    //////option.AddArgument("--headless");
+                    option2.AddArgument("--headless");
                     new DriverManager().SetUpDriver(new ChromeConfig());
                     _parallelConfig.Driver = new ChromeDriver(option2);
                     browser = new Browser(_parallelConfig.Driver);
