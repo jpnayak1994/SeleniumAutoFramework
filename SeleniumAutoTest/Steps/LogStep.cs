@@ -42,6 +42,7 @@ namespace SeleniumAutoTest.Steps
         [When(@"I enter UserName and Password and click Login")]
         public void WhenIEnterUserNameAndPasswordAndClickLogin()
         {
+
             _parallelConfig.CurrentPage.As<LoginPage>().EnterUserNameAndPassWord("admin", "password");
             LogHelpers.LogFile(_loggingStep.FeatureFileName, "I enter UserName and Password and click Login");
             //ScenarioContext.Current.Pending();
@@ -51,10 +52,18 @@ namespace SeleniumAutoTest.Steps
         [When(@"I enter UserName and Password as per (.*) provided and clicked Login")]
         public void WhenIEnterUserNameAndPasswordAsPerProvidedAndClickedLogin(string p0)
         {
-            // _parallelConfig.CurrentPage.As<LoginPage>().EnterUserNameAndPassWord(excelHelper.ReadDataUsingRowNo("UserName", _dataColLogin, Convert.ToInt16(p0)), excelHelper.ReadDataUsingRowNo("Password", _dataColLogin,Convert.ToInt16(p0)));
-            _parallelConfig.CurrentPage.As<LoginPage>().EnterUserNameAndPassWord(excelHelper.ReadDataUsingRowNo("UserName", _dataColLogin, p0), excelHelper.ReadDataUsingRowNo("Password", _dataColLogin,p0));
+            try
+            {
+                _parallelConfig.CurrentPage.As<LoginPage>().EnterUserNameAndPassWord(excelHelper.ReadDataUsingRowNo("UserName", _dataColLogin, p0), excelHelper.ReadDataUsingRowNo("Password", _dataColLogin, p0));
 
-            LogHelpers.LogFile(_loggingStep.FeatureFileName,p0);
+                LogHelpers.LogFile(_loggingStep.FeatureFileName, p0);
+            }
+            catch (Exception ex)
+            {
+                LogHelpers.LogFile(_loggingStep.FeatureFileName + "Error", ex.Message);
+            }
+            // _parallelConfig.CurrentPage.As<LoginPage>().EnterUserNameAndPassWord(excelHelper.ReadDataUsingRowNo("UserName", _dataColLogin, Convert.ToInt16(p0)), excelHelper.ReadDataUsingRowNo("Password", _dataColLogin,Convert.ToInt16(p0)));
+
         }
 
 

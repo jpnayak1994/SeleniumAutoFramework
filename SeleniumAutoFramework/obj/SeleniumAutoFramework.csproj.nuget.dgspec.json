@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj": {}
+    "C:\\Users\\jyoti\\OneDrive\\Documents\\GitHub\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj": {
+    "C:\\Users\\jyoti\\OneDrive\\Documents\\GitHub\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj",
+        "projectUniqueName": "C:\\Users\\jyoti\\OneDrive\\Documents\\GitHub\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj",
         "projectName": "SeleniumAutoFramework",
-        "projectPath": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj",
+        "projectPath": "C:\\Users\\jyoti\\OneDrive\\Documents\\GitHub\\SeleniumAutoFramework\\SeleniumAutoFramework\\SeleniumAutoFramework.csproj",
         "packagesPath": "C:\\Users\\jyoti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jyoti\\source\\repos\\SeleniumCoding\\version8\\SeleniumAutoFramework\\SeleniumAutoFramework\\obj\\",
+        "outputPath": "C:\\Users\\jyoti\\OneDrive\\Documents\\GitHub\\SeleniumAutoFramework\\SeleniumAutoFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jyoti\\AppData\\Roaming\\NuGet\\NuGet.Config",

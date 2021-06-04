@@ -24,10 +24,17 @@ namespace SeleniumAutoTest.Steps
         [Given(@"I have navigated to the application")]
         public void GivenIHaveNavigatedToTheApplication()
         {
-            // ScenarioContext.Current.Pending();
-            _parallelConfig.Driver.Navigate().GoToUrl(Settings.Config_AUT);
-            LogHelpers.LogFile(_loggingStep.FeatureFileName, "Navigated");
-            _parallelConfig.CurrentPage = new HomePage(_parallelConfig, _loggingStep);
+            try
+            {
+                // ScenarioContext.Current.Pending();
+                _parallelConfig.Driver.Navigate().GoToUrl(Settings.Config_AUT);
+                LogHelpers.LogFile(_loggingStep.FeatureFileName, "Navigated");
+                _parallelConfig.CurrentPage = new HomePage(_parallelConfig, _loggingStep);
+            }
+            catch (Exception ex)
+            {
+                LogHelpers.LogFile(_loggingStep.FeatureFileName + "Error", ex.Message);
+            }
         }
         [Given(@"I see application opened")]
         public void GivenISeeApplicationOpened()
